@@ -11,13 +11,5 @@
   "license": "ISC",
   "dependencies": {},
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/106598065/ReactJSClass.git"
-  },
-  "bugs": {
-    "url": "https://github.com/106598065/ReactJSClass/issues"
-  },
-  "homepage": "https://github.com/106598065/ReactJSClass#readme",
   "description": ""
 }
