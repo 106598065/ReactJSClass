@@ -1,5 +1,5 @@
 {
-  "name": "uploadHerokuNodeApp1@",
+  "name": "uploadHerokuNodeApp",
   "version": "1.0.0",
   "main": "HelloWord.js",
   "scripts": {
