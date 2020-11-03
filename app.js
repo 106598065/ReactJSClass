@@ -72,7 +72,7 @@ app.get('/logout', function(req, res, next){
 
 	req.session.destroy(function(err) {
 		if(err){
-			res.json({ret_code: 2, ret_msg: '退出登录失败'});
+			res.json({ret_code: 2, ret_msg: 'logout fail'});
 			return;
 		}
 		
