@@ -53,11 +53,11 @@ app.post('/login', function(req, res, next){
 	if(user){
 		req.session.regenerate(function(err) {
 			if(err){
-				return res.json({ret_code: 2, ret_msg: '登录失败'});				
+				return res.json({ret_code: 2, ret_msg: 'login fail'});				
 			}
 			
 			req.session.loginUser = user.name;
-			res.json({ret_code: 0, ret_msg: '登录成功'});							
+			res.json({ret_code: 0, ret_msg: 'login successfully'});							
 		});
 	}else{
 		res.json({ret_code: 1, ret_msg: '账号或密码错误'});
@@ -82,4 +82,5 @@ app.get('/logout', function(req, res, next){
 	});
 });
 
-app.listen(3000);
+const port = process.env.PORT || 3000;
+app.listen(port, () => console.log(`Listening on ${port}`));
