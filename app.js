@@ -24,12 +24,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use(session({
-	name: identityKey,
-	secret: 'testAct',  // 用来对session id相关的cookie进行签名
-	store: new FileStore(),  // 本地存储session（文本文件，也可以选择其他store，比如redis的）
-	saveUninitialized: false,  // 是否自动保存未初始化的会话，建议false
-	resave: false,  // 是否每次都重新保存会话，建议false
-	cookie: {
+	name: identityKey, //cookie中儲存sessionID的key
+	secret: 'testAct',  // 必填，sign 用來驗證SessionID
+	store: new FileStore(),  // session在server端的存放方式
+	saveUninitialized: false,  // 每次request重新設定session cookie
+	resave: false,  // 每次request重新設定session
+	cookie: { //設定sessionID 的cookie相關選項
 		maxAge: 1000 * 1000  // 有效期，单位是毫秒
 	}
 }));
