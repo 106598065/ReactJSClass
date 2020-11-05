@@ -17,6 +17,11 @@
     "express-session": "^1.14.0",
     "install": "^0.8.1",
     "npm": "^3.10.6",
+    "react-redux": "^7.2.2",
+    "redux-amrc": "^1.0.6",
     "session-file-store": "^0.2.0"
+  },
+  "devDependencies": {
+    "redux-devtools": "^3.7.0"
   }
 }
