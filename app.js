@@ -44,6 +44,11 @@ app.get('/', function(req, res, next){
 		name: loginUser || ''
 	});
 });
+// ReactDOM.render(
+//     <Auth state={store.getState()}
+//     />,
+//     document.getElementById('root')
+//   );
 
 app.post('/login', function(req, res, next){
 	var sess = req.session;
