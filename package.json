@@ -7,8 +7,8 @@
   },
   "license": "MIT",
   "scripts": {
-    "build": "webpack --mode production",
-    "start": "webpack-dev-server --open"
+    "start": "node server.js", 
+    "heroku-postbuild": "webpack -p" 
   },
   "dependencies": {
     "history": "^4.10.1",
